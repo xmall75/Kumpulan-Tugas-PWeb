@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Inter, sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container .left {
+    min-height: 920px;
+    width: 25%;
+    /* border: 1px solid red; */
+    margin: auto;
+    /* text-align: center; */
+    padding: 3rem;
+    background: #4d4b48;
+    color: #e4e4e4;
+}
+
+.container .left .profile-photo {
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+
+.container .left .profile-photo img {
+    border-radius: 100%;
+    width: 120px;
+}
+
+.container .left .about {
+    margin: auto;
+    max-width: 300px;
+    padding-block: 2rem;
+    border-bottom: 1px solid gray;
+}
+
+.container .left .about h2 {
+    font-weight: medium;
+}
+
+.container .left .about p {
+    margin-top: 1rem;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2rem;
+}
+
+.container .left .social {
+    margin: auto;
+    max-width: 300px;
+    padding-block: 2rem;
+    border-bottom: 1px solid gray;
+}
+
+.container .left .social h2 {
+    font-weight: medium;
+}
+
+.container .left .social p {
+    white-space: pre-line;
+    margin-top: 1rem;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2rem;
+}
+
+.container .left .social a {
+    text-decoration: none;
+    color: #e4e4e4;
+}
+
+.container .left .bahasa {
+    margin: auto;
+    max-width: 300px;
+    padding-block: 2rem;
+    border-bottom: 1px solid gray;
+}
+
+.container .left .bahasa h2 {
+    margin-bottom: 1rem;
+}
+
+.container .left .bahasa span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2rem;
+    margin-right: 2rem;
+}
+
+.container .left .bahasa span::before {
+    content: url('https://img.icons8.com/ios-glyphs/10/D7D7D7/filled-circle.png');
+    display: inline-block;
+}
+
+.container .right {
+    padding: 3rem;
+    padding-bottom: 0;
+    margin: auto;
+    width: 75%;
+    min-height: 900px;
+    color: #908E8B;
+    /* border: 1px solid blue; */
+}
+
+.container .right .profile {
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    border-bottom: 1px solid #d9d7d2;
+    align-items: center;
+    padding-bottom: 1rem;
+    width: 90%;
+}
+
+.container .right .profile .name .devName {
+    font-size: 28px;
+    color: #5E5D54;
+    white-space: pre-line;
+    font-weight: bold;
+}
+
+.container .right .profile .name .devJob {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.container .right .profile .details {
+    /* white-space: pre-line; */
+    font-size: 14px;
+}
+
+.container .right .profile .details p {
+    margin-block: 1rem;
+    position: relative;
+}
+
+.container .right .profile .details p.address::before {
+    content: url('https://img.icons8.com/material-rounded/18/5E5D54/marker.png');
+    display: inline-block;
+    position: absolute;
+    left: -1.5rem;
+}
+
+.container .right .profile .details p.phone::before {
+    content: url('https://img.icons8.com/material-rounded/16/5E5D54/phone--v1.png');
+    display: inline-block;
+    position: absolute;
+    left: -1.5rem;
+}
+
+.container .right .profile .details p.email::before {
+    content: url('https://img.icons8.com/material-rounded/17/5E5D54/mail.png');
+    display: inline-block;
+    position: absolute;
+    left: -1.5rem;
+}
+
+.container .right .experience {
+    margin: 2rem auto;
+    /* border: 1px solid red; */
+    align-items: center;
+    padding-bottom: 2rem;
+    width: 90%;
+    border-bottom: 1px solid #d9d7d2;
+}
+
+.container .right .experience .title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container .right .experience .details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    row-gap: 0.5rem;
+    /* border: 1px solid red; */
+}
+
+.container .right .experience .details .left-detail {
+    white-space: pre-line;
+    width: 40%;
+    /* border: 1px solid blue; */
+}
+
+.container .right .experience .details .right-detail {
+    white-space: pre-line;
+    text-align: left;
+    width: 59%;
+    font-size: 14px;
+    /* border: 1px solid green; */
+}
+
+.container .right .pendidikan {
+    margin: 2rem auto;
+    /* border: 1px solid red; */
+    align-items: center;
+    padding-bottom: 1rem;
+    width: 90%;
+    border-bottom: 1px solid #d9d7d2;
+}
+
+.container .right .pendidikan .title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container .right .pendidikan .details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* border: 1px solid red; */
+}
+
+.container .right .pendidikan .details .left-detail {
+    white-space: pre-line;
+    width: 40%;
+    /* border: 1px solid blue; */
+}
+
+.container .right .skill {
+    margin: 2rem auto;
+    /* border: 1px solid red; */
+    align-items: center;
+    padding-bottom: 2rem;
+    width: 90%;
+    border-bottom: 1px solid #d9d7d2;
+}
+
+.container .right .skill .title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container .right .skill .details {
+    display: flex;
+    padding-top: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* border: 1px solid red; */
+}
+
+.container .right .skill .details .content {
+    height: 50px;
+    width: 250px;
+    margin: 0.2rem;
+    /* border: 1px solid blue; */
+}
+
+.container .right .skill .details .content p.title {
+    font-size: 14px;
+}
+
+.container .right .skill .details .content .range {
+    width: 100%;
+    margin: 0.5rem auto;
+    height: 10px;
+    position: relative;
+    background: #D1CECB;
+}
+
+.container .right .skill .details .content .range .fill {
+    position: absolute;
+    height: 100%;
+    background: #4D4B48;
+}

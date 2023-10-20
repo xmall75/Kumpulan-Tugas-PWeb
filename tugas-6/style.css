@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body.popup-body {
+    display: flex;
+    background: #828282;
+    vertical-align: middle;
+    height: 100vh;
+}
+
+.popup {
+    margin: auto;
+    background: #fff;
+    width: 500px;
+    height: 240px;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 10px #4f4f4f;
+}
+
+.container {
+    width: 100%;
+}
+
+.container .form {
+    padding: 5rem;
+    width: 30%;
+    margin: auto;
+}
+
+.container .form label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.container .form input[type="text"], .container .form input[type="email"] {
+    width: 450px;
+    border: 1px solid #bbbbbb;
+    margin-block: 0.5rem;
+    /* height: 20px; */
+    padding: 0.5rem;
+}
+
+.container .form select {
+    width: 457px;
+    margin-block: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid #bbbbbb;
+}
+
+.container .form input[type="text"]:focus, .container .form input[type="email"]:focus {
+    box-shadow: 2px 2px 7px #bbbbbb;
+}
+
+.container .form select:focus {
+    box-shadow: 2px 2px 7px #bbbbbb;
+}
+
+.container .form input[type="submit"] {
+    width: 100px;
+    height: 30px;
+    border: none;
+    background: #00dbf8;
+    font-weight: bold;
+    cursor: pointer;
+}
